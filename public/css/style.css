@@ -1,0 +1,512 @@
+
+/*Global*/
+
+p, ul{
+	margin:0;
+	padding: 0;
+}
+tr th {
+	font-weight: bold;
+	text-align: center;
+}
+td{
+	text-align: center;
+}
+td form{
+	justify-content: center;
+}
+select{
+    padding: 3px;
+}
+.table th{
+	border-top: none;
+}
+.container{
+	max-width:  1639px;
+}
+.periode{
+	display: none;
+}
+.periode.active{
+	display: block;
+}
+section{
+	padding: 20px 0;
+}
+/*Header*/
+
+header{
+	padding: 0 30px; 
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #3c8dbc;
+	width: 100%;
+	height: 60px;
+	position: relative;
+}
+header h1{
+	font-size: 20px;
+	margin-bottom: 0;
+}
+header a{
+	color: #fff;
+	transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+}
+header a:hover{
+	text-decoration: none;
+	color: #ddd;
+}
+header i{
+	margin-right: 10px;
+	color: #fff;
+}
+header #login ul{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+header #login ul li:first-child{
+	margin-right: 20px;
+}
+
+
+/*Main*/
+
+main{
+	display: flex;
+	    background: #1e282c;
+}
+
+/*Sidebar*/
+
+#sidebar{
+	
+	height: 100vh;
+	width: 190px;
+	background: #1e282c;
+	padding-top :30px; 
+	
+}
+#sidebar ul li{
+	color: #fff;
+	padding: 15px 0px 15px 30px;
+	transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+}
+#sidebar ul li a:hover{
+	color: #3c8dbc;
+}
+#sidebar ul li a:hover span{
+	border: 2px solid #3c8dbc;
+	border-top: none;
+    border-left: none;
+}
+#sidebar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+#sidebar ul li i{
+	margin-right: 10px;
+}
+#sidebar ul li span{
+    width: 9px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin-left: 10px;
+    display: inline-block;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+	    -webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+}
+
+/*hamburger*/
+#iconBurger{
+	display: none;
+}
+#iconBurger{
+   	bottom: -44px;
+    z-index: 40;
+    cursor: pointer;
+}
+#iconBurger .barre{
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+	margin-top: 6px;
+	margin-bottom: 0;
+}
+#iconBurger .barre:first-child{
+	margin-top: 0;
+}
+
+/*Content*/
+#content{
+	width: 100%;
+    background: #ecf0f5;
+}
+.box{
+	margin-top: 20px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0px 1px 2px #adadad;
+		-webkit-box-shadow: 0px 1px 2px #adadad;
+		-moz-box-shadow: 0px 1px 2px #adadad;
+		padding: 20px
+}
+.box h2{
+	padding: 10px 0;
+	font-size: 20px;
+ 	font-variant: small-caps;
+ 
+}
+#stock .box{
+	border-top: 2px solid #dc7831;
+}
+#course .box{
+	border-top: 2px solid #2eabd1;
+}
+#gestion .box{
+	border-top: 2px solid #00ffa1;
+}
+#utilisateur .box{
+	border-top: 2px solid #00ffa1;
+}
+#listeProduits{
+	border-top: 3px solid #cc5353;
+}
+#listeProduits td p,#journal td p{
+	padding-top: 14px;
+}
+#listeProduits td img,#journal td img{
+	width: 50px;
+}
+
+/*Login*/
+
+#mainLogin{
+	height: 100vh;
+	width: 100%;
+	background: #ecf0f5;
+}
+#mainLogin #rowLogin{
+	align-items: center;
+	width: 500px;
+	padding: 20px;
+}
+#mainLogin .container{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#mainLogin .panel-heading{
+	font-size: 20px;
+	font-variant: small-caps;
+	margin-bottom: 20px;
+}
+#mainLogin h1{
+	font-variant: small-caps;
+}
+#mainLogin p{
+	margin-bottom: 20px;
+    font-variant: small-caps;
+    font-size: 20px;
+}
+
+/*Home*/
+
+.sidebarLiHome{
+	display: none;
+}
+
+/*Index*/
+
+#index{
+	display: flex;
+    justify-content: center;
+}
+#logoIndex{
+	font-variant: small-caps;
+	text-align: center;
+	color: #8c8c8c;
+	padding: 150px 0;
+
+}
+#logoIndex h1{
+	font-variant: small-caps;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+#logoIndex p{
+	line-height: 10px;	
+	margin-bottom: 20px;
+}
+#logoIndex a:first-child{
+	margin-right: 10px;
+}
+#logoIndex nav ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Stock*/
+
+	/*menu accordeon*/
+	#menu-accordeon{
+		border-top: 2px solid #ccc;
+	    padding-top: 20px;
+	}
+	#menu-accordeon li{
+		padding-top: 20px;
+	}
+	#menu-accordeon .barreAdmin{
+		width: 100%;
+		margin: 10px 0;
+	    height: 2px;
+	    background: #ccc;
+	}
+	#menu-accordeon ul li h3{
+		cursor: pointer;
+		display: table;
+	}
+	#menu-accordeon ul li h3 .fleche_bas{
+		width: 20px;
+	}
+	#menu-accordeon ul .slideUp, nav li .slideUp{
+		display: none;
+	}
+
+ul.pagination li.active span{
+	   background: #007bff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: #fff;
+    margin: 0 5px;
+}
+ 
+#stock .stockHead{
+	    display: flex;
+    justify-content: space-between;
+}
+.stockHead div{
+	display: flex;
+	align-items: center;
+}
+.stockHead div p{
+	font-weight: bold;
+	margin-right: 10px;
+}
+.choixCategorie ul{
+	margin: 20px 0 0 0;
+	align-items: center;
+	justify-content: center;
+}
+.choixCategorie ul li{
+	padding: 10px 0;
+    margin: 0 10px;
+    text-align: center;
+    background: #f2f2f2;
+    position: relative;
+    bottom: -12px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+.periodeOption.active{
+	border: 2px solid #ccc;
+    border-bottom: 2px solid #fff;
+    border-radius: 10px 10px 0 0;
+    bottom: -2px;
+    background: #f2f2f200;
+    padding: 20px 0;
+}
+
+
+/*Course*/
+
+.tableau{
+	display: none;
+}
+.tableau.active{
+	display: table-row-group;
+}
+.popupTableau{
+	display: none;
+}
+.popupTableau.active{
+	display: block;
+	padding: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+.displayCoche.active{
+	color: red;
+}
+.coche p{
+	cursor: pointer;
+	border: 1px solid;
+	padding: 0 6px;
+}
+/*Gestion*/
+
+#gestion .head{
+	display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.addProduit .form-group .col-md-4 {
+	margin-top: 20px;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 989px) {
+	/*sidebar*/
+	#sidebar{
+		position: fixed;
+		left: 0;
+		z-index: 30;
+		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		transition: transform .6s ease-in-out;
+		-webkit-transition: transform .6s ease-in-out;
+	}
+	#sidebar.isOpen{
+		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+	}
+
+	/*hamburger*/
+	#iconBurger{
+		display: block;
+	}
+
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+	/*sidebar*/
+	#sidebar{
+		position: fixed;
+		left: 0;
+		z-index: 30;
+		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		transition: transform .6s ease-in-out;
+		-webkit-transition: transform .6s ease-in-out;
+	}
+	#sidebar.isOpen{
+		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+	}
+
+	/*hamburger*/
+	#iconBurger{
+		display: block;
+	}
+
+	/*Stock*/
+	.choixCategorie ul li{
+		padding: 10px 0;
+	    margin: 10px 0 ;
+	    text-align: center;
+	    background: #f2f2f2;
+	    position: relative;
+	    border-radius: 0;
+    	bottom: 0;
+	}
+	.periodeOption.active{
+		border: none;
+	    border-radius: 0;
+	    bottom: 0;
+	    background:#ccc;
+	    padding: 10px 0;
+	}
+
+}
+@media screen and (max-width: 575px) {
+	/*header*/
+	header h1{
+		display: none;
+	}
+	/*sidebar*/
+	#sidebar{
+		position: fixed;
+		left: 0;
+		z-index: 30;
+		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		transition: transform .6s ease-in-out;
+		-webkit-transition: transform .6s ease-in-out;
+	}
+	#sidebar.isOpen{
+		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+	}
+
+	/*hamburger*/
+	#iconBurger{
+		display: block;
+	}
+	/*Home*/
+	#logoIndex nav ul {
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+	.sidebarLiHome{
+		display: block;
+	}
+	/*Stock*/
+	.choixCategorie ul li{
+		padding: 10px 0;
+	    margin: 10px 0 ;
+	    text-align: center;
+	    background: #f2f2f2;
+	    position: relative;
+	    border-radius: 0;
+    	bottom: 0;
+	}
+	.periodeOption.active{
+		border: none;
+	    border-radius: 0;
+	    bottom: 0;
+	    background:#ccc;
+	    padding: 10px 0;
+	}
+	.stockHead div{
+		display: block;
+	}
+	#gestion .head {
+    	display: block;
+	}
+
+	/*Login*/
+	#mainLogin #rowLogin{
+		width: 100%;
+	}
+	#mainLogin h1{
+		text-align: center;
+	}
+	#index .sidebarLi{
+		margin-top: 10px;
+	}
+}
+
+
+
+   
